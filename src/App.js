@@ -86,9 +86,6 @@ const App = () => {
             setNotes(notes.filter(n=> n.id !== id))
         })
 
-        // axios.put(url, changedNote).then(response => {
-        //     setNotes(notes.map(n => n.id !==id ? n : response.data))
-        // })
      }
 
     return (
