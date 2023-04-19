@@ -41,6 +41,12 @@ const App = () => {
             setNotes(notes.concat(returnedNote))
             setNewNotes(" ")
         })
+        .catch(error=>{
+            setErrorMessage(error.message)
+            setTimeout(()=>{
+                setErrorMessage(null)
+            }, 5000)
+        })
         // axios
         // .post('http://localhost:3001/notes', noteObject)
         // .then(response => {
